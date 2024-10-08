@@ -96,8 +96,8 @@
             </tr>
 
             <?php
-            include_once 'Database.php';
-            include_once 'Gudang.php';
+            include_once 'database.php';
+            include_once 'warehouse.php';
 
             $database = new Database();
             $db = $database->getConnection();
