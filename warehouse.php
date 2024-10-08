@@ -60,6 +60,14 @@ class Gudang {
       $stmt = $this->conn->prepare($query);
       $stmt->bindParam(':id', $this->id);
       return $stmt->execute();
-  }
+    }
+
+    public function readOne() {
+      $query = "SELECT * FROM gudang WHERE id = :id";
+      $stmt = $this->conn->prepare($query);
+      $stmt->bindParam(':id', $this->id);
+      $stmt->execute();
+      return $stmt;
+    }
 }
 ?>

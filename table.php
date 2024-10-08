@@ -79,7 +79,8 @@
                                 <input type='hidden' name='id' value='{$row['id']}'>
                                 <button type='submit' name='action' value='delete' class='bg-red-500 hover:bg-red-600 text-white py-1 px-2 rounded'>Delete</button>
                             </form>
-                          </td>";
+                            <a href='edit.php?id={$row['id']}' class='bg-blue-500 hover:bg-blue-600 text-white py-1 px-2 rounded'>Edit</a>
+                        </td>";
                     echo "</tr>";
                 }
                 ?>
